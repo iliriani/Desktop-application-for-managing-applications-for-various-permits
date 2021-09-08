@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JFileChooser" name="jFileChooser1">
+    </Component>
+    <Component class="javax.swing.JFileChooser" name="jFileChooser2">
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="jTable1">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="4" rowCount="4">
+                <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                <Column editable="true" title="Title 4" type="java.lang.Object"/>
+              </Table>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
+      <Events>
+        <EventHandler event="ancestorAdded" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="jMenuBar1AncestorAdded"/>
+      </Events>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="mkerkesat">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Kerkesat"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="mraportet">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Raportet"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="mraportetMouseClicked"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mraportetActionPerformed"/>
+          </Events>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="madministrimi">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Administrimi"/>
+          </Properties>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="locationByPlatform" type="boolean" value="true"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="232" max="-2" attributes="0"/>
+                              <Component id="btnruajkerkesen" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="btnanulokerkesen" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="15" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblzyret" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbzyret" min="-2" pref="159" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="147" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Component id="lblstatusi_lendes" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbltaksa" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="lblnrprotokollit" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="221" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jScrollPane4" min="-2" pref="219" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="btnshtodoc" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="btnfshije" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lbldata_leshimit" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="lblpergjigjja" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lblarkivimi" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="kmbpergjigjja" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
+                                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                              <Component id="jdataleshimit" alignment="0" min="-2" pref="113" max="-2" attributes="0"/>
+                                              <Component id="txttaksa" alignment="1" min="-2" pref="112" max="-2" attributes="0"/>
+                                              <Component id="txtnrprotokollit" alignment="1" min="-2" pref="112" max="-2" attributes="0"/>
+                                              <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="txtarkivimi" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="txtstatusi_lendes" alignment="1" pref="112" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblkerkesa" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblkomuna" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                                      <Component id="kmbkomunat" pref="111" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblaktiviteti" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="kmbaktiviteti" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lbldata_pranimit" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblkompania" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lbladresa" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lbllloji_lejes" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lbltel" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txttel" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="txtadresa" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="txtkompania" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="kmblejet" alignment="0" pref="111" max="32767" attributes="0"/>
+                                          <Component id="jdatapranimit" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblporosia_kerkesa" min="-2" pref="331" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="lblkerkesa" min="-2" pref="21" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="kmblejet" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbllloji_lejes" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblkompania" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtkompania" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="lbladresa" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="txtadresa" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txttel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbltel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lbldata_pranimit" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jdatapranimit" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="kmbaktiviteti" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblaktiviteti" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblkomuna" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="kmbkomunat" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="37" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblnrprotokollit" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtnrprotokollit" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="txttaksa" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblstatusi_lendes" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtstatusi_lendes" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblarkivimi" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtarkivimi" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                              <Component id="lbltaksa" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="lbldata_leshimit" min="-2" max="-2" attributes="0"/>
+                          <Component id="jdataleshimit" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="kmbpergjigjja" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblpergjigjja" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="lblporosia_kerkesa" min="-2" pref="16" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnshtodoc" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnfshije" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="lblzyret" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jScrollPane4" min="-2" pref="90" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnruajkerkesen" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnanulokerkesen" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="cbzyret" min="-2" pref="61" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lbllloji_lejes">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Lloji i lejes:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="kmblejet">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="1">
+            <StringItem index="0" value="&lt;zgjedh&gt;"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kmblejetActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbladresa">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Adresa:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtadresa">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txttel">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbltel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Telefoni:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblkerkesa">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="66" red="66" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Kerkesa per leje "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbldata_pranimit">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Data e pranimit:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="kmbaktiviteti">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="1">
+            <StringItem index="0" value="&lt;zgjedh&gt;"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kmbaktivitetiActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblaktiviteti">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Aktiviteti-Veprimtaria:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="kmbkomunat">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="1">
+            <StringItem index="0" value="&lt;zgjedh&gt;"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kmbkomunatActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblkomuna">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Komuna:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblnrprotokollit">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Numri i Protokollit:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtnrprotokollit">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbltaksa">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Taksa:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txttaksa">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblstatusi_lendes">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Statusi i Lendes:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtstatusi_lendes">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblarkivimi">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Arkivimi ne Follder:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtarkivimi">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbldata_leshimit">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Data e leshimit:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblpergjigjja">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pergjigjja e Komisionit:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="kmbpergjigjja">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="1">
+            <StringItem index="0" value="&lt;zgjedh&gt;"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kmbpergjigjjaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnruajkerkesen">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ruaj"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnruajkerkesenActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnanulokerkesen">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Anulo"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnanulokerkesenActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtkompania">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblkompania">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Kompania:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblporosia_kerkesa">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="creator.components.CheckBoxList" name="cbzyret">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnshtodoc">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Shto Doc"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnshtodocActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="tblfajllat">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="model" type="code"/>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0"/>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="false" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="String s=merrifajllin();&#xa;s=s+id;&#xa;int i=0;&#xa;File folder = new File(s);&#xa;File[] listOfFiles = folder.listFiles();&#xa;if(listOfFiles != null){&#xa;String[] vlera=new String[listOfFiles.length];&#xa;for (File listOfFile : listOfFiles){&#xa;if (listOfFile.isDirectory())&#xa;System.out.println(listOfFile.getName());&#xa;vlera[i]=listOfFile.getName();&#xa;i++;}&#xa;String data[][] = {{}};&#xa;String col[] = {&quot;Fajlli&quot;, &quot;Pershkrimi&quot;, &quot;Fshije&quot;};&#xa;model=new javax.swing.table.DefaultTableModel(data,col);&#xa;for(int k=0;k&lt;vlera.length;k++){&#xa;model.insertRow(tblfajllat.getRowCount(), new Object[]{vlera[k]});&#xa;}&#xa;}&#xa;else{&#xa;String data[][] = {{}};&#xa;String col[] = {&quot;Fajlli&quot;, &quot;Pershkrimi&quot;, &quot;Fshije&quot;};&#xa;model=new javax.swing.table.DefaultTableModel(data,col);}"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="com.toedter.calendar.JDateChooser" name="jdatapranimit">
+    </Component>
+    <Component class="com.toedter.calendar.JDateChooser" name="jdataleshimit">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnfshije">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fshije"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnfshijeActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblzyret">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Zyret:"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
